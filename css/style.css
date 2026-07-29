@@ -242,21 +242,6 @@ section { padding: 60px 0; }
 
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
-.trust-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 28px;
-  margin-top: 40px;
-  padding-top: 28px;
-  border-top: 1px solid var(--border);
-}
-.trust-bar span {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 13.5px;
-  color: var(--text-muted);
-}
-
 .hero-glow {
   position: absolute;
   top: -200px;
