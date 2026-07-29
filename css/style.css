@@ -211,7 +211,7 @@ section { padding: 60px 0; }
    ========================================================= */
 .hero {
   position: relative;
-  padding: 220px 0 70px;
+  padding: 170px 0 50px;
   overflow: hidden;
 }
 .hero-inner { max-width: 760px; position: relative; z-index: 1; }
@@ -655,7 +655,7 @@ section { padding: 60px 0; }
 
 @media (max-width: 720px) {
   section { padding: 44px 0; }
-  .hero { padding: 160px 0 50px; }
+  .hero { padding: 130px 0 40px; }
 
   .main-nav {
     position: fixed;
