@@ -45,6 +45,32 @@ setTimeout(() => {
   revealEls.forEach((el) => el.classList.add('is-visible'));
 }, 1500);
 
+// ===================== Menu: destaca o link da seção visível =====================
+const navLinksByHref = {};
+document.querySelectorAll('.nav-link').forEach((link) => {
+  navLinksByHref[link.getAttribute('href')] = link;
+});
+
+const setActiveLink = (href) => {
+  Object.values(navLinksByHref).forEach((link) => link.classList.remove('active'));
+  const active = navLinksByHref[href];
+  if (active) active.classList.add('active');
+};
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) setActiveLink('#' + entry.target.id);
+    });
+  },
+  { rootMargin: '-110px 0px -60% 0px', threshold: 0 }
+);
+
+Object.keys(navLinksByHref).forEach((href) => {
+  const section = document.querySelector(href);
+  if (section) sectionObserver.observe(section);
+});
+
 // ===================== Formulário de newsletter (mock, sem backend) =====================
 const newsletterForm = document.getElementById('newsletterForm');
 const formNote = document.getElementById('formNote');

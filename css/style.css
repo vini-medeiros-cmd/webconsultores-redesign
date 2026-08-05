@@ -185,6 +185,7 @@ section { padding: 60px 0; }
   transition: color var(--transition);
 }
 .nav-link:hover { color: #fff; }
+.nav-link.active { color: var(--accent); font-weight: 600; }
 
 .header-actions { display: flex; align-items: center; gap: 18px; }
 
@@ -695,6 +696,7 @@ section { padding: 60px 0; }
   .main-nav ul { flex-direction: column; gap: 22px; }
   .main-nav .nav-link { font-size: 17px; color: var(--text); }
   .main-nav .nav-link:hover { color: var(--accent-text); }
+  .main-nav .nav-link.active { color: var(--accent-text); }
 
   .menu-toggle { display: flex; }
   .header-actions .btn-sm { display: none; }
