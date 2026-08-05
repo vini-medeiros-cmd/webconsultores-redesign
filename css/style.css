@@ -212,19 +212,6 @@ section { padding: 60px 0; }
 }
 .hero-inner { max-width: 760px; position: relative; z-index: 1; }
 
-.eyebrow {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 0.04em;
-  color: var(--accent-text);
-  background: var(--accent-soft);
-  display: inline-block;
-  padding: 8px 18px;
-  border-radius: 4px;
-  margin-bottom: 24px;
-}
-
 .hero-title {
   font-size: clamp(36px, 5.6vw, 62px);
   margin-bottom: 20px;
