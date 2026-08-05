@@ -95,7 +95,6 @@
       <a href="https://wa.me/5521990792658?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20WebConsultores%20e%20gostaria%20de%20falar%20com%20um%20especialista." class="btn btn-ghost" target="_blank" rel="noopener">Fale com um especialista</a>
     </div>
   </div>
-  <div class="hero-glow" aria-hidden="true"></div>
 </section>
 
 <!-- ===================== SOBRE NÓS ===================== -->
@@ -194,38 +193,43 @@
 </section>
 
 <!-- ===================== VANTAGENS ===================== -->
+<!-- Layout em lista editorial (não em grade de cards) para não repetir
+     o mesmo componente visual usado em Soluções -->
 <section class="advantages" id="vantagens">
-  <div class="container">
-    <div class="section-head reveal">
+  <div class="container advantages-layout">
+    <div class="advantages-intro reveal">
       <p class="section-tag">Por que a WebConsultores</p>
       <h2 class="section-title">Vantagens de contar com a gente</h2>
-    </div>
-
-    <div class="advantages-grid">
-      <div class="advantage-card reveal">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2 3 6v6c0 5 3.8 8.7 9 10 5.2-1.3 9-5 9-10V6l-9-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        <h3>Confiabilidade</h3>
-      </div>
-      <div class="advantage-card reveal">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.6"/><path d="M2.5 20c1-3.5 3.7-5.5 6.5-5.5s5.5 2 6.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M16 4.3c1.6.5 2.8 2 2.8 3.7 0 1.8-1.2 3.2-2.8 3.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M17.5 14.6c2.3.7 4 2.6 4.7 5.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-        <h3>Equipe Profissional</h3>
-      </div>
-      <div class="advantage-card reveal">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M17 6.5c0-1.9-2.2-3.5-5-3.5s-5 1.4-5 3.5 2.2 3 5 3.5 5 1.6 5 3.5-2.2 3.5-5 3.5-5-1.6-5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-        <h3>Economia</h3>
-      </div>
-      <div class="advantage-card reveal">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        <h3>Agilidade</h3>
+      <div class="benefits-row">
+        <span class="benefit-tag">Praticidade</span>
+        <span class="benefit-tag">Facilidade</span>
+        <span class="benefit-tag">Feedback</span>
+        <span class="benefit-tag">Suporte ao cliente</span>
       </div>
     </div>
 
-    <div class="benefits-row reveal">
-      <span class="benefit-tag">Praticidade</span>
-      <span class="benefit-tag">Facilidade</span>
-      <span class="benefit-tag">Feedback</span>
-      <span class="benefit-tag">Suporte ao cliente</span>
-    </div>
+    <ul class="pillar-list reveal">
+      <li>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2 3 6v6c0 5 3.8 8.7 9 10 5.2-1.3 9-5 9-10V6l-9-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <span class="pillar-name">Confiabilidade</span>
+        <span class="pillar-desc">Processos auditáveis e transparência em cada entrega.</span>
+      </li>
+      <li>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.6"/><path d="M2.5 20c1-3.5 3.7-5.5 6.5-5.5s5.5 2 6.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M16 4.3c1.6.5 2.8 2 2.8 3.7 0 1.8-1.2 3.2-2.8 3.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M17.5 14.6c2.3.7 4 2.6 4.7 5.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span class="pillar-name">Equipe Profissional</span>
+        <span class="pillar-desc">Especialistas dedicados, atualizados com a legislação vigente.</span>
+      </li>
+      <li>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M17 6.5c0-1.9-2.2-3.5-5-3.5s-5 1.4-5 3.5 2.2 3 5 3.5 5 1.6 5 3.5-2.2 3.5-5 3.5-5-1.6-5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span class="pillar-name">Economia</span>
+        <span class="pillar-desc">Redução de custos operacionais e da carga tributária.</span>
+      </li>
+      <li>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <span class="pillar-name">Agilidade</span>
+        <span class="pillar-desc">Respostas rápidas para decisões que não podem esperar.</span>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -256,34 +260,27 @@
 </section>
 
 <!-- ===================== NÚMEROS / ESTATÍSTICAS ===================== -->
+<!-- Números tratados como uma faixa editorial (parágrafo + tira de dados),
+     em vez do padrão "tag + título + grade de cards" repetido nas outras seções -->
 <section class="stats" id="numeros">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="section-tag">Resultados</p>
-      <h2 class="section-title">Nossos serviços têm o objetivo de diagnosticar necessidades e recomendar soluções para impulsionar o seu negócio</h2>
-    </div>
+  <div class="container stats-layout">
+    <p class="stats-intro reveal"><span class="stats-intro-word">Resultados.</span> Nossos serviços têm o objetivo de diagnosticar necessidades e recomendar soluções para impulsionar o seu negócio.</p>
 
-    <div class="stats-grid">
-      <div class="stat-card reveal">
-        <div class="stat-ring" data-value="58" style="--value:58">
-          <span class="stat-number">58%</span>
-        </div>
-        <p class="stat-label">Faturamento</p>
-        <p class="stat-caption">Aumento médio no faturamento de clientes atendidos</p>
+    <div class="stats-strip reveal">
+      <div class="stat-item">
+        <span class="stat-figure">58%</span>
+        <span class="stat-name">Faturamento</span>
+        <span class="stat-detail">Aumento médio no faturamento de clientes atendidos</span>
       </div>
-      <div class="stat-card reveal">
-        <div class="stat-ring" data-value="67" style="--value:67">
-          <span class="stat-number">67%</span>
-        </div>
-        <p class="stat-label">Taxa de Turnover</p>
-        <p class="stat-caption">Redução na rotatividade de clientes das empresas assessoradas</p>
+      <div class="stat-item">
+        <span class="stat-figure">67%</span>
+        <span class="stat-name">Taxa de Turnover</span>
+        <span class="stat-detail">Redução na rotatividade de clientes das empresas assessoradas</span>
       </div>
-      <div class="stat-card reveal">
-        <div class="stat-ring" data-value="93" style="--value:93">
-          <span class="stat-number">93%</span>
-        </div>
-        <p class="stat-label">Market Share</p>
-        <p class="stat-caption">Ganho de participação de mercado reportado pelos clientes</p>
+      <div class="stat-item">
+        <span class="stat-figure">93%</span>
+        <span class="stat-name">Market Share</span>
+        <span class="stat-detail">Ganho de participação de mercado reportado pelos clientes</span>
       </div>
     </div>
   </div>
