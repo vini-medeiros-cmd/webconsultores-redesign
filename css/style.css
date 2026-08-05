@@ -139,17 +139,13 @@ section { padding: 60px 0; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  padding: 22px 0;
+  padding: 18px 0;
   transition: var(--transition);
-  background: rgba(255,255,255,0);
-  border-bottom: 1px solid transparent;
+  background: var(--text);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .site-header.scrolled {
-  padding: 14px 0;
-  background: rgba(247,243,233,0.8);
-  backdrop-filter: blur(14px) saturate(1.4);
-  -webkit-backdrop-filter: blur(14px) saturate(1.4);
-  border-bottom: 1px solid var(--border);
+  padding: 12px 0;
 }
 
 .header-inner {
@@ -180,10 +176,10 @@ section { padding: 60px 0; }
 .nav-link {
   font-size: 14.5px;
   font-weight: 500;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.7);
   transition: color var(--transition);
 }
-.nav-link:hover { color: var(--text); }
+.nav-link:hover { color: #fff; }
 
 .header-actions { display: flex; align-items: center; gap: 18px; }
 
@@ -201,7 +197,7 @@ section { padding: 60px 0; }
 .menu-toggle span {
   display: block;
   height: 2px;
-  background: var(--text);
+  background: #fff;
   border-radius: 2px;
   transition: var(--transition);
 }
@@ -211,7 +207,7 @@ section { padding: 60px 0; }
    ========================================================= */
 .hero {
   position: relative;
-  padding: 170px 0 50px;
+  padding: 130px 0 50px;
   overflow: hidden;
 }
 .hero-inner { max-width: 760px; position: relative; z-index: 1; }
@@ -675,7 +671,7 @@ section { padding: 60px 0; }
 
 @media (max-width: 720px) {
   section { padding: 44px 0; }
-  .hero { padding: 130px 0 40px; }
+  .hero { padding: 110px 0 40px; }
 
   .main-nav {
     position: fixed;
@@ -691,7 +687,8 @@ section { padding: 60px 0; }
   }
   .main-nav.open { transform: translateX(0); }
   .main-nav ul { flex-direction: column; gap: 22px; }
-  .nav-link { font-size: 17px; }
+  .main-nav .nav-link { font-size: 17px; color: var(--text); }
+  .main-nav .nav-link:hover { color: var(--accent-text); }
 
   .menu-toggle { display: flex; }
   .header-actions .btn-sm { display: none; }
