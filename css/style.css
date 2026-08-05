@@ -66,6 +66,11 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 
 section { padding: 60px 0; }
 
+/* Evita que o header fixo cubra o início da seção ao navegar por âncora */
+#top, #sobre, #solucoes, #vantagens, #numeros, #contato {
+  scroll-margin-top: 110px;
+}
+
 /* Linha divisória sutil entre seções de fundo claro (seções escuras já se
    separam pelo próprio contraste de cor, então ficam de fora) */
 .about, .services, .advantages, .stats, .approach, .social-proof {
@@ -523,18 +528,23 @@ section { padding: 60px 0; }
 .cta-final {
   background: var(--text);
   color: #fff;
-  text-align: center;
   padding: 48px 0;
 }
-.cta-final h2 { color: #fff; font-size: clamp(22px, 2.4vw, 28px); margin-bottom: 10px; }
-.cta-final p { color: rgba(255,255,255,0.75); font-size: 15px; margin-bottom: 20px; }
-.cta-final-inner { max-width: 520px; margin: 0 auto; }
+.cta-final h2 { color: #fff; font-size: clamp(22px, 2.4vw, 28px); margin-bottom: 8px; }
+.cta-final p { color: rgba(255,255,255,0.75); font-size: 15px; margin: 0; }
+.cta-final-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.cta-final-text { flex: 1 1 320px; }
 .cta-final-actions {
   display: flex;
   gap: 14px;
-  justify-content: center;
   flex-wrap: wrap;
-  margin-top: 4px;
+  flex-shrink: 0;
 }
 .cta-final .btn-ghost { border-color: rgba(255,255,255,0.4); color: #fff; }
 .cta-final .btn-ghost:hover { border-color: #fff; }
@@ -689,6 +699,7 @@ section { padding: 60px 0; }
   .stat-item:first-child { padding-left: 20px; border-left: 2px solid var(--border); }
   .social-proof-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 40px; }
-  .cta-final-actions { flex-direction: column; align-items: stretch; }
+  .cta-final-inner { text-align: center; justify-content: center; }
+  .cta-final-actions { flex-direction: column; align-items: stretch; width: 100%; }
   .newsletter-row { flex-direction: column; }
 }
